@@ -1,0 +1,31 @@
+{
+  "scenario_id": "normal_staffing",
+  "label": "Normal staffing — Campus Tech Fest",
+  "description": "The club has enough skill-qualified volunteers to cover all ten positions. Two AV-skilled volunteers can cover the overlapping setup and demo roles separately.",
+  "event_name": "Campus Tech Fest",
+  "volunteers": [
+    {"id": "V01", "name": "Ari Sen", "skills": ["AV"], "available_slot_ids": ["av-demo", "workshop-checkin"], "max_assignments": 1, "preferred_slot_ids": ["av-demo"]},
+    {"id": "V02", "name": "Bela Roy", "skills": ["AV"], "available_slot_ids": ["av-setup", "av-demo"], "max_assignments": 1, "preferred_slot_ids": ["av-setup"]},
+    {"id": "V03", "name": "Chin Das", "skills": [], "available_slot_ids": ["registration-1", "registration-2", "helpdesk-1", "info-desk"], "max_assignments": 1, "preferred_slot_ids": ["registration-1", "registration-2"]},
+    {"id": "V04", "name": "Diya Rao", "skills": [], "available_slot_ids": ["registration-1"], "max_assignments": 1, "preferred_slot_ids": []},
+    {"id": "V05", "name": "Eshan Pal", "skills": [], "available_slot_ids": ["registration-2", "helpdesk-1"], "max_assignments": 1, "preferred_slot_ids": []},
+    {"id": "V06", "name": "Farah Ali", "skills": [], "available_slot_ids": ["helpdesk-1", "helpdesk-2", "info-desk", "cleanup"], "max_assignments": 2, "preferred_slot_ids": ["cleanup"]},
+    {"id": "V07", "name": "Gautam Iyer", "skills": ["Photo"], "available_slot_ids": ["helpdesk-2", "photo-booth"], "max_assignments": 2, "preferred_slot_ids": ["photo-booth"]},
+    {"id": "V08", "name": "Hana Bose", "skills": [], "available_slot_ids": ["helpdesk-2", "cleanup"], "max_assignments": 2, "preferred_slot_ids": []},
+    {"id": "V09", "name": "Ishaan Mehta", "skills": [], "available_slot_ids": ["registration-2", "info-desk", "cleanup"], "max_assignments": 2, "preferred_slot_ids": ["info-desk"]},
+    {"id": "V10", "name": "Jiya Kapoor", "skills": ["AV"], "available_slot_ids": ["av-setup"], "max_assignments": 1, "preferred_slot_ids": []},
+    {"id": "V11", "name": "Kabir Nair", "skills": ["Photo"], "available_slot_ids": ["helpdesk-1", "photo-booth"], "max_assignments": 2, "preferred_slot_ids": []}
+  ],
+  "slots": [
+    {"id": "registration-1", "role": "Registration desk", "start_time": 540, "end_time": 600, "required_skill": null},
+    {"id": "registration-2", "role": "Registration desk", "start_time": 540, "end_time": 600, "required_skill": null},
+    {"id": "helpdesk-1", "role": "Attendee help desk", "start_time": 600, "end_time": 660, "required_skill": null},
+    {"id": "helpdesk-2", "role": "Attendee help desk", "start_time": 600, "end_time": 660, "required_skill": null},
+    {"id": "av-setup", "role": "AV setup", "start_time": 540, "end_time": 660, "required_skill": "AV"},
+    {"id": "av-demo", "role": "Demo room AV support", "start_time": 660, "end_time": 720, "required_skill": "AV"},
+    {"id": "workshop-checkin", "role": "Workshop check-in", "start_time": 660, "end_time": 720, "required_skill": null},
+    {"id": "info-desk", "role": "Information desk", "start_time": 720, "end_time": 780, "required_skill": null},
+    {"id": "cleanup", "role": "Hall cleanup", "start_time": 720, "end_time": 780, "required_skill": null},
+    {"id": "photo-booth", "role": "Photo booth", "start_time": 600, "end_time": 720, "required_skill": "Photo"}
+  ]
+}
